@@ -291,10 +291,12 @@
             <option value="">Выберите марку</option>
             {% for make in car_makes %}
             <option value="{{ make.ID }}">{{ make.carMake }}</option>
-            {% endfor %}</select
+            {% endfor %}
+            <option value="">Прочее...</option></select
           ><br />
           <select class="form-input h3" id="carModel" name="carModel" required>
-            <option value="">Выберите модель</option></select
+            <option value="">Выберите модель</option>
+            <option value="">Прочее...</option></select
           ><br />
           <textarea
             class="form-input h3"
@@ -360,7 +362,7 @@
       </div>
     </main>
     <footer class="site-footer">
-        <p class="h3">&copy; 2025 Евгений Нечаев. Все права защищены.</p>
+      <p class="h3">&copy; 2025 Евгений Нечаев. Все права защищены.</p>
     </footer>
     <script src="static/header.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

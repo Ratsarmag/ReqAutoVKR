@@ -67,9 +67,32 @@
           placeholder="Пароль"
           required
         /><br />
-        <button class="button submit-button h3" type="submit">
-          Зарегистрироваться
-        </button>
+
+        <div class="form-checkbox">
+          <input
+            type="checkbox"
+            id="privacyPolicy"
+            name="privacyPolicy"
+            required
+          />
+          <label for="privacyPolicy" class="h4"
+            >Я согласен на обработку персональных данных</label
+          >
+        </div>
+
+        <div class="button-container">
+          <button class="button submit-button h3" type="submit">
+            Зарегистрироваться
+          </button>
+          <button class="button submit-button h3">
+            <a
+              href="{{ url_for('index') }}"
+              class="no-link-style"
+              style="display: block; width: 100%; height: 100%"
+              >Назад</a
+            >
+          </button>
+        </div>
       </form>
     </section>
   </body>

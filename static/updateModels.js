@@ -11,6 +11,7 @@ function updateModels() {
           '<option value="' + model.ID + '">' + model.carModel + "</option>"
         );
       });
+      select.append('<option value="">Прочее...</option>');
     },
   });
 }

@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!isDragging) return;
     currentX = e.clientX || e.touches[0].clientX;
     const deltaX = currentX - startX;
-    const threshold = 100; // Distance to trigger a swipe
+    const threshold = 100;
 
     if (deltaX > threshold) {
       prevCard();
